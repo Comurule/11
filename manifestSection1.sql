@@ -1,0 +1,10 @@
+SELECT COUNT(*) FROM TeamsComurule;
+SELECT COUNT(*) FROM TeamsComurule WHERE Department = 'Accounting';
+SELECT COUNT(*) FROM TeamsComurule WHERE NOT Status = 'Activated';
+SELECT Name FROM TeamsComurule LIMIT 5;
+SELECT * FROM TeamsComurule WHERE Age BETWEEN 18 AND 26;
+SELECT * FROM TeamsComurule WHERE Createed_dt BETWEEN '02-01-2020' AND '09-01-2020';
+SELECT * FROM TeamsComurule WHERE Createed_dt BETWEEN '04-01-2020' AND '06-01-2020';
+UPDATE TeamsComurule SET Status = 'Activated' WHERE Status = 'Pending';
+UPDATE TeamsComurule SET Name = 'Timothy' WHERE Name = 'Tim';
+SELECT COUNT(*), Department FROM TeamsComurule GROUP BY Department;
