@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  margin: auto;
+  width: 40%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.contact{
+            background-color:rgb(182, 182, 182);
+            width: 100%;
+            
+            display: none;
+        }
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+table{
+            width: 100%;
+            font-size: 16px;
+            margin: auto;
+        }
+        th{
+            text-align: right;
+            background-color:  rgb(182, 182, 182);
+            border-top-left-radius: 10%;
+            border-bottom-left-radius: 10%;
+          
+        }
+        td{
+            background-color:white;
+            border-top-right-radius: 10%;
+            border-bottom-right-radius: 10%;
+            
+        }
+h3{
+    text-align: center;
+    padding-top: 5px;
+}
+input, textarea{
+            width: 100%;
+            background-color: #eeeeee;
+            padding: 5px;
+            border-style: none;
+        }
+        input:focus, textarea:focus{
+            background-color:white;
+
+        }
+        .img{
+            width: 50%;
+            margin: auto; 
+            box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.3); 
+            border: 2px dashed #445; 
+            border-radius: 40%;
+        }
+        img{
+            width:100%; 
+            border-radius: 40%; 
+            margin: auto;
+
+        }
+</style>
+</head>
+<body>
+	<div>
+		<a href="#"> Home </a> |
+        <a href="#"> Change </a> |
+        <a href="#"> APC </a> |
+        <a href="#"> Begins With Me </a> |
+        <a href="#"> Location </a>
+	</div>
+
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+        <div class="container">
+            <div class="img">
+                <img src="image/img.jpg" alt="Comurule" >
+            </div>
+           
+          </div>
+      <div class="container">
+          
+        <h3 class="title">Umechukwu Chibuike</h3>
+        <div> 
+            <table>
+                <tr>
+                    <th>Slack ID</th>
+                    <td>Comurule</td>
+                </tr>
+                <tr>
+                    <th>State Of Origin</th>
+                    <td>Anambra state</td>
+                </tr>
+                <tr>
+                    <th>Home Town</th>
+                    <td>Amesi</td>
+                </tr>
+                <tr>
+                    <th>Date Of Birth</th>
+                    <td>September 7, 1991</td>
+                </tr>
+                <tr>
+                    <th>Contact Address</th>
+                    <td> 91 Ramat road Angwar Rimi, Kaduna, Kaduna state</td>
+                </tr>
+                <tr>
+                    <th>Occupation</th>
+                    <td>Software Engineer</td>
+                </tr>  
+            </table>
+        </div>
+        <p><button class="button" onclick="document.getElementById('form').style.display='block'">Contact</button></p>
+        <div class="contact container" id="form">
+            <h3>Contact me</h3>
+            <form >
+                <p><input type="text" placeholder="Enter Your Name"></p>
+                <p><input type="email" placeholder="Enter Your Email Address"></p>
+                <p><textarea rows="5" placeholder="Enter your message"></textarea></p>
+                <p><button class="button" type="submit">Send</button></p>
+            </form>
+        </div>
+      </div>
+    </div>
+    <div>
+  	<footer style="background-color:black; text-align:center; color: white" >
+      <p> ©️ Copyright CodeCamp 2020 </p>
+      <p> All Rights Reserved </p>
+   </footer>
+  </div>
+  </div>
+  
+
+</div>
+
+</body>
+
+
+</html>
