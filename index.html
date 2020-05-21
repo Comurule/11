@@ -65,6 +65,22 @@ html {
   background-color: #555;
 }
 
+a.butt {
+  /*border: none;*/
+  /*outline: 0;*/
+  /*display: inline-block;*/
+  padding: 5px;
+  color: white;
+  background-color: #000;
+  /*text-align: center;*/
+  cursor: pointer;
+  /*width: 100%;*/
+}
+
+a.butt:hover {
+  background-color: #555;
+}
+
 table{
             width: 100%;
             font-size: 16px;
@@ -113,18 +129,20 @@ input, textarea{
 </style>
 </head>
 <body>
-	<div>
-		<a href="#"> Home </a> |
-        <a href="#"> Change </a> |
-        <a href="#"> APC </a> |
-        <a href="#"> Begins With Me </a> |
-        <a href="#"> Location </a>
-	</div>
+	
 
 
 <div class="row">
   <div class="column">
+  	
     <div class="card">
+    	<div style="padding: 10px; margin: 15px; align-content:stretch;">
+		<a class="butt" href="#"> Home </a> |
+        <a class="butt" href="#"> Change </a> |
+        <a class="butt" href="#"> APC </a> |
+        <a class="butt" href="#"> Begins With Me </a> |
+        <a class="butt" href="#"> Location </a>
+	</div>
         <div class="container">
             <div class="img">
                 <img src="image/img.jpg" alt="Comurule" >
@@ -150,7 +168,7 @@ input, textarea{
                 </tr>
                 <tr>
                     <th>Date Of Birth</th>
-                    <td>September 7, 1991</td>
+                    <td>September 7</td>
                 </tr>
                 <tr>
                     <th>Contact Address</th>
